@@ -1,9 +1,7 @@
 package com.example.n_suzuki.jsonsample;
 
 import android.app.Activity;
-import android.net.Uri;
 import android.os.AsyncTask;
-import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -31,8 +29,8 @@ import java.util.List;
 public class AsyncHttpRequest extends AsyncTask<String, Void, String> {
 
   private Activity mainActivity;
-  private String strUrl = "http://10.0.2.2:8080/jersey-sample/resource/simple";
-  //    private String strUrl = "http://1.latest.slim3demo001.appspot.com/AjaxTweet.json";
+  //  private String strUrl = "http://10.0.2.2:8080/jersey-sample/resource/simple";
+  private String strUrl = "http://1.latest.slim3demo001.appspot.com/AjaxTweet.json";
   private String json = null;
 
 
@@ -96,7 +94,8 @@ public class AsyncHttpRequest extends AsyncTask<String, Void, String> {
         jlist.add(jsonArray.getJSONObject(i));
       }
       for (JSONObject obj : jlist) {
-        String item = obj.getString("name1");
+        String item = obj.getString("content");
+//        String item = obj.getString("name1");
         adapter.add(item);
       }
     } catch (JSONException e) {
