@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/JsonSample.iml" filepath="$PROJECT_DIR$/JsonSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/json-sample.iml" filepath="$PROJECT_DIR$/json-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/volley/volley.iml" filepath="$PROJECT_DIR$/modules/volley/volley.iml" />
     </modules>
   </component>
 </project>

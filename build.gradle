@@ -17,3 +17,17 @@ allprojects {
         jcenter()
     }
 }
+
+/*
+ * サブプロジェクト Volley 用のビルドスクリプト
+ */
+project(':modules:volley') {
+    buildscript {
+        repositories {
+            mavenCentral()
+        }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:1.0.+'
+        }
+    }
+}
